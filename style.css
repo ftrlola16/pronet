@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+.navbar-item{
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: crimson;
+    height: 120px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.301);
+}
+.navbar{
+    display: flex;
+}
+.logo-brd{
+    color: rgba(255, 255, 255, 0.904);
+    font-weight: lighter;
+    font-size: 20%;
+    /* line-height: 0.2%; */
+    font-style: italic;
+    margin-top: 20px;
+}
+
+#navbarNav{
+    display: flex;
+    gap: 3em;
+    margin-left: 90%;
+}
+
+.navbar-nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.719); 
+}
+
+.navbar-nav :hover{
+    transition: 400ms linear;
+    transform: scale(1.2);
+    color: rgba(255, 0, 0, 0.705);
+}
+
+/*slides*/
+.about{
+    margin: 20px;
+    object-fit: contain;
+    height: 200%;
+}
+.carousel-inner {
+    margin-top: 20px;
+    border: 10px;
+    margin-bottom: 30px;
+    
+} 
+
+.caption{
+    text-decoration: rgba(255, 255, 255, 0.452);
+    color: white;
+    font-size: 2em;
+}
+/* form styling */
+#head-form{
+    border: solid;
+    border-radius: 5px;
+    padding-left: 1.5em;
+    width: 200px;
+    margin-left: 50px;
+    background-color: salmon;
+    font-size: 1.3em;
+}
+
+/*cards starts here */
+.card{
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(20px);
+} 
+.card-text{
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    color: sienna;
+}
+.cards{
+    display: flex;
+    margin: 10px;
+    margin-left: 10%;
+    gap: 1em;
+    object-fit: cover;  
+}
+.cards img{
+ height: 350px;
+}
+.card-text1{
+ text-align: center;
+ font-size: 1em;
+ font-style: italic;
+ color: sienna;
+}
+#services{
+    margin: 10%;
+    background-color: rgba(255, 0, 0, 0.534);
+}
+/* footer starts here */
+.foot{
+    height: 300px;
+    margin: 20px;
+    background-color: crimson;
+}
+
+.modern{
+    text-align: center;
+    margin-top: 10px;
+}
+.follow{
+    text-align: center;
+    font-size: 1em;
+}
+.footer-item{
+    justify-content: center;
+    gap: 1em;    
+}
+.media{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    color: rgba(128, 0, 0.5);
+}
+.media a{
+    color: rgba(128, 0, 0.5);
+    font-size: 1.5em;
+}
+.go-up i{
+    align-content: flex-end;
+    position: absolute;
+    z-index: 1;
+    margin-left: 90%;
+    box-shadow: 4px 4px 5px rgba(128,0,0);
+    border: thin 40px;
+    border-radius: 20px;
+    font-size: 2.5em;
+    color: rgba(255, 0, 0, 0.575);
+    background-color: rgba(255, 255, 255, 0.493);
+}
+.go-up :hover{
+    box-shadow: 0 8px 16px 0 rgb(220, 20, 60);
+    color: rgba(255, 0, 0, 0.932);
+}
+.copyright{
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1em;
+}
+@media screen and (max-width:800px){
+   .navbar-item.responsive a.icon {
+       display: flex;
+   }
+   .logo-brd{
+       margin-top: 0;
+   }
+    .navbar-brand{
+        margin-top: 5px;
+        font-size: 5px;
+    }
+    #built{
+        font-size: 5px;
+    }
+    .wrapper{
+        display: block;
+        background-color: coral;
+    }
+    .cards{
+        display: block;
+        background-color: coral;
+        margin-bottom: 10px;
+
+    }
+    .grid-container{
+        display: block;
+    }
+    hr{
+        border: 10px dotted coral;
+        border-radius: 2px;
+      }
+    .img-p{
+        width: 300px;
+        border: double 10px;
+    }
+    #call{
+        font-style: oblique;
+        font-size: 1em;
+        width: 200px;
+        border: thin 1rem;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.527);
+        text-align: center;
+    }
+    .cards img{
+        height: 400px;
+    }
+    #head-form{
+        
+        border: solid 3px;
+        border-radius: 10px;
+        padding-left: 1.5em;
+        width: 200px;
+        margin-left: 80px;
+        background-color: salmon;
+        font-size: 1em;
+    }
+}
