@@ -1,13 +1,12 @@
-function myFunction(params) {
-  var x =
-  document.getElementById('navbar-nav');
-  if (x.className === 'navbar-nav') {
-    x.className += 'responsive';
-  }else {
-    x.className = 'navbar-nav'
+function myFunction() {
+  var x = document.getElementById("navbar2");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
   }
-
 }
+
 
 const goUp = document.querySelector('.go-up');
 window.onscroll = () => {
